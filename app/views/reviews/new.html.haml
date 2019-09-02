@@ -1,0 +1,61 @@
+= render 'books/header'#ヘッダーのビューファイル
+.review_page
+  .contents_section
+    .container
+      .header-section1
+        %h2.text-middle
+          %i.fas.fa-book
+          Book Review
+      .show_book
+        .text-middle
+          %i.fas.fa-book
+          .book_title
+            = @book.title
+        = image_tag "#{@book.image}",class: 'one_image'
+      .user_avatar
+        = image_tag @book.user.avatar,class:"user_avatar__image"
+        .user_avatar__name
+          = @book.user.name
+        .user_avatar__text
+          投稿者
+      .text_review
+        .header-section2
+          text
+        .revuew_text
+          = @book.review
+      .user_review
+        .header-section2
+          form
+      .review_form_area
+        = form_for [@book,@review] do |f|
+          %ul.field_list
+            %li.field
+              .rate_filed
+                = f.label :rate,'評価',class:'name'
+                = f.number_field :rate, placeholder: '評価', value: 1, max: 10, min: 1, class:'rate_field'
+            %li.field
+              .review_area
+                = f.text_area :review,class:'text_field'
+            %li.actions
+              .review_btn
+                = f.submit '投稿', class: 'submit'
+      .users_review
+        .header-section2
+          Review
+      .user_oll_revew
+      
+        - @book.reviews.reverse_each do |review|
+          %ul.review_list
+            %li.image_area
+              = image_tag review.user.avatar,class:"i_image"
+            %li.name_area
+              -if review.rate.present?
+                %span.rating-star
+                  %i{class: "star-actived rate-#{review.rate}0"}
+              - else
+                %span.rating-star
+                  %i.star-actived.rate-
+            %li.rate_area
+              = review.user.name
+            %li.review_area
+              = review.review

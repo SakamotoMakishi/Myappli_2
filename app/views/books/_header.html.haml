@@ -1,0 +1,56 @@
+%header.header
+  %nav.global-nav
+    .side_bar
+      .side_contents
+        .contents
+          - if user_signed_in?
+            %h2= current_user.name
+          - else
+            %h2
+          %ul.contents_list
+            - if user_signed_in?
+              %li
+                %i.fas.fa-book
+                  = link_to 'TopPage','/',class: "btn"
+              %li
+                %i.fas.fa-address-card
+                  = link_to 'MyPage',"/users/#{current_user.id}",class: "btn"
+              %li
+                %i.fas.fa-edit
+                  = link_to 'PoSt',new_book_path,class: "btn"
+              %li
+                %i.fas.fa-child
+                  = link_to 'Users',users_path,class: "btn"
+              %li
+                %i.fas.fa-cloud-upload-alt
+                  = link_to "Logout", destroy_user_session_path, method: :delete, class: "btn"
+            - else
+              %li
+                %i.fas.fa-book
+                  = link_to 'TopPage','/',class: "btn"
+              %li
+                %i.fas.fa-users-cog
+                  = link_to 'Login',new_user_session_path,class: "btn"
+              %li
+                %i.fas.fa-users-cog
+                  = link_to 'Sinup',new_user_registration_path,class: "btn"
+
+  #js-hamburger.hamburger
+    %span.hamburger__line.hamburger__line--1
+    %span.hamburger__line.hamburger__line--2
+    %span.hamburger__line.hamburger__line--3
+  #js-black-bg.black-bg
+  :javascript
+    function toggleNav() {
+      var body = document.body;
+      var hamburger = document.getElementById('js-hamburger');
+      var blackBg = document.getElementById('js-black-bg');
+
+      hamburger.addEventListener('click', function() {
+        body.classList.toggle('nav-open');
+      });
+      blackBg.addEventListener('click', function() {
+        body.classList.remove('nav-open');
+      });
+      }
+    toggleNav();

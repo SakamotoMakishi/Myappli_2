@@ -1,0 +1,33 @@
+.contents_section
+  .container
+    .header-section
+      %h2.text-middle
+        %i.fas.fa-book
+        ALL CONTENTS
+    %ul.book_list
+      - @books.each do |book| #booksテーブルからbookという変数でtitleを取り出している。
+        %li.col
+          - if user_signed_in?
+            = link_to "/books/#{book.id}/reviews/new" do
+              .book_image{style:"background-image:url(#{book.image})"}
+          - else
+            = link_to root_path do
+              .book_image{style:"background-image:url(#{book.image})"}
+          .thumbnail__caption
+            %h3.book_title{title: "#{book.title}"}
+              = book.title
+              -if book.reviews.present?
+                %span.rating-star
+                  %i{class: "star-actived rate-#{book.reviews.average(:rate).round}0"}
+              - else
+                %span.rating-star
+                  %i.star-actived.rate-
+- if user_signed_in?
+  .post_box
+    %a.fas.fa-edit{href: "books/new"}
+- else
+  .login
+    %h1.login__pop  Login & Sinup
+    %i.far.fa-arrow-alt-circle-right.faa-passing.animated
+  .post_box
+    %a.fas.fa-users-cog{href: "users/sign_in"}

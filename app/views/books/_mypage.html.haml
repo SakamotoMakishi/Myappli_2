@@ -1,0 +1,28 @@
+- if user_signed_in?
+  .mypage
+    = image_tag current_user.avatar,class:"mypage__image"
+    .mypage__name
+      %h2= current_user.name
+    %ul.mypage_list
+      %li.list1
+        = link_to 'Mypage',"/users/#{current_user.id}"
+      %li.list4
+        週間読書数
+        .book_week
+          = "#{@book_week}"
+      %li.list5
+        月間読書数
+        .book_week
+          = "#{@book_month}"
+      %li.list2
+        合計読書数
+        .book_week
+          = "#{@total}"
+      %li.list3
+        - @last_book.each do |book|
+          最近の投稿
+          .book_title{title: "#{book.title}"}
+            = book.title
+          = link_to "/books/#{book.id}/reviews/new" do
+            .book_image{style:"background-image:url(#{book.image})"}
+- else

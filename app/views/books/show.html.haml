@@ -1,0 +1,13 @@
+= render 'books/header'#ヘッダーのビューファイル
+.top_page
+  .contents_section
+    .container
+      .header-section
+        %h2.text-middle
+          %i.fas.fa-book
+          CONTENTS
+    .book_list
+      .text-middle
+        %i.fas.fa-dice
+        = @book.title
+    = image_tag "#{@book.image}", alt: "#{@book.title}",class: 'one_image'

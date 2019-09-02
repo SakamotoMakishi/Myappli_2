@@ -1,0 +1,319 @@
+.review_page{
+  background-image:url(https://www.pakutaso.com/shared/img/thumb/ELLY863_washi14132906_TP_V.jpg);
+  background-size:cover;
+  .contents_section{
+    margin-top: 50px;
+    padding:10px;
+    background-color: rgba(240, 239, 239, 0.705);
+    .container{
+      top:10px;
+      .header-section1{
+        border-bottom: 3px solid #d7dbe2;
+        .text-middle{
+          font-size: 25px;
+          text-align: center;
+          margin-top: 10px;
+          .fas{
+            font-size:20px;
+          }
+          .book_title{
+            font-size:20px;
+          }
+        }
+      }
+      .show_book{
+        margin-left: 105px;
+        position: relative;
+        top:10px;
+        left:10px;
+        .text-middle{
+          font-size:30px;
+          position: relative;
+          top: 45px;
+          left: 320px;
+          width: 200px;
+          .fas{
+            padding: 0;
+            position: relative;
+            left:15px;
+          }
+          .book_title{
+          position: relative;
+          top: -45px;
+          left: 60px;
+          width: 800px;
+          }
+        }
+        .one_image{
+          width: 300px;
+          height: 350px;
+          border-radius: 5px;
+          -moz-box-shadow: rgba(134, 130, 130, 0.2) 0px 0px 10px 10px;
+          box-shadow: rgba(129, 124, 124, 0.7) 0px 0px 30px 30px;
+          box-shadow: rgba(231, 231, 230, 0.37) 0px 10px 30px 10px;
+        }
+      }
+      .user_avatar{
+        position: relative;
+        left: 955px;
+        bottom: 420px;
+        width: 200px;
+        height: 200px;
+        &__image{
+        height: 90px;
+        width: 100px;
+        border-radius: 50%;
+        -moz-box-shadow: rgba(134, 130, 130, 0.2) 0px 0px 2px 2px;
+        box-shadow: rgba(129, 124, 124, 0.7) 0px 0px 5px 5px;
+        box-shadow: rgba(105, 105, 103, 0.37) 0px 3px 3px 3px;
+        }
+        &__name{
+          position: relative;
+          bottom: 35px;
+          left: 120px;
+          font-size:20px;
+        }
+        &__text{
+          position: relative;
+          bottom: 101px;
+          left: 120px;
+        }
+      }
+      .text_review{
+        position: relative;
+        top: -350px;
+        bottom: 7px;
+        .header-section2{
+          width: 700px;
+          margin-top: 0px;
+          border-bottom: 3px solid #d7dbe2;
+          margin: auto;
+          position: relative;
+          top: -160px;
+          left: 92px;
+          font-size: 20px;
+        }
+        .revuew_text{
+          position: relative;
+          left:10px;
+          top:20px;
+          position: relative;
+          left: 450px;
+          top: -130px;
+          width: 900px;
+          height: 500px;
+          word-wrap:break-word;
+          font-size:20px;
+        }
+      }
+      .user_review{
+        position: relative;
+        top: -450px;
+        bottom: 7px;
+        .header-section2{
+          width: 1200px;
+          margin-top: 0px;
+          border-bottom: 5px solid #d7dbe2;
+          position: relative;
+          top: -30px;
+          left: 92px;
+          font-size: 26px;
+        }
+      }
+    }
+    .review_form_area{
+      position: relative;
+      width: 400px;
+      bottom: 450px;
+      .new_review{
+        ul{
+        list-style: none;
+        margin-left:30px;
+        border-radius: 5px;
+          li{
+            margin-bottom:20px;
+            height: 30px;
+            padding-top: 10px;
+            border-radius: 5px;
+            .review_area{
+              margin-left: -10px;
+            }
+            .name{
+              font-size: 20px;
+              position: relative;
+              left: 114px;
+              bottom: -2px;
+            }
+            .oll_field{
+              height: 25px;
+              margin-left: 10px;
+              bottom: -5px;
+              -webkit-box-shadow: rgba(156, 155, 155, 0.2) 0px 0px 1px 1px;
+              -moz-box-shadow: rgba(216, 215, 215, 0.2) 0px 0px 1px 1px;
+              box-shadow: rgba(192, 192, 191, 0.856) 0px 0px 2px 2px;
+              border-radius: 5px;
+            }
+            .rate_field{
+              height: 20px;
+              margin-left: 10px;
+              bottom: -5px;
+              -webkit-box-shadow: rgba(156, 155, 155, 0.2) 0px 0px 1px 1px;
+              -moz-box-shadow: rgba(216, 215, 215, 0.2) 0px 0px 1px 1px;
+              box-shadow: rgba(192, 192, 191, 0.856) 0px 0px 2px 2px;
+              border-radius: 5px;
+            }
+            .review_field{
+              padding-bottom: 90px;
+            }
+            .text_field{
+              width: 1050px;
+              height: 100px;
+              box-shadow: rgba(184, 183, 182, 0.856) 0px 0px 1px 1px;
+              border-radius: 5px;
+              margin-left: 65px;
+            }
+            .review_btn{
+              padding: 0px;
+              position: relative;
+              width: 50px;
+              left: 1200px;
+              cursor: pointer;
+              border-radius: 5px;
+              .submit{
+                width: 100px;
+                height: 50px;
+                padding: 0 30px;
+                background-color: #f5bd6a;
+                color: white;
+                position: relative;
+                cursor: pointer;
+                font-size:15px;
+                top: -31px;
+                right: 45px;
+                -webkit-box-shadow: rgba(156, 155, 155, 0.2) 0px 0px 1px 1px;
+                -moz-box-shadow: rgba(216, 215, 215, 0.2) 0px 0px 1px 1px;
+                box-shadow: rgba(248, 215, 153, 0.856) 0px 0px 3px 3px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .users_review{
+      position: relative;
+      top: -280px;
+      bottom: 7px;
+      text-align: center;
+      .header-section2{
+        width: 1200px;
+        margin-top: 0px;
+        border-bottom: 5px solid #d7dbe2;
+        position: relative;
+        top: -85px;
+        left: 92px;
+        font-size: 35px;
+      }
+    }
+    .user_oll_revew{
+      position: relative;
+      bottom: 350px;
+      list-style: none;
+      padding-left: 100px;
+      .review_list{
+        list-style: none;
+        height: 150px;
+        margin-bottom: 120px;
+        .image_area{
+          float:left;
+          .i_image{
+            height: 135px;
+            width: 135px;
+            border-radius: 50%;
+            position: relative;
+            right: 80px;
+            top: 90px;
+            background-color: aliceblue;
+            -moz-box-shadow: rgba(134, 130, 130, 0.2) 0px 0px 2px 2px;
+            box-shadow: rgba(129, 124, 124, 0.7) 0px 0px 5px 5px;
+            box-shadow: rgba(71, 64, 40, 0.37) 0px 4px 4px 4px;
+          }
+        }
+        .rate_area{
+          padding-left: 130px;
+          font-size: 25px;
+          position: relative;
+          bottom: -205px;
+          right: 190px;
+        }
+        .review_area{
+          font-size: 15px;
+          width: 1000px;
+          height: 120px;
+          margin-left:115px;
+          margin-top:10px;
+          box-shadow: rgba(184, 183, 182, 0.856) 0px 0px 1px 1px;
+          background-color: rgba(250, 250, 250, 0.925);
+          padding: 10px;
+          position: relative;
+          display: inline-block;
+          margin: 1.5em 0 1.5em 15px;
+          padding: 45px 10px;
+          min-width: 120px;
+          max-width: 100%;
+          border-radius: 10px;
+        }
+        .review_area:before {
+          content: "";
+          position: absolute;
+          top: 9%;
+          left: -106px;
+          margin-top: -12px;
+          border: 55px solid transparent;
+          border-right: 52px solid #f8f8f8;
+        }
+        .name_area{
+          position: relative;
+          .rating-star{
+            margin-top:10px;
+            position: relative;
+            top: 100px;
+            left: 25px;
+            display: inline-block;
+            vertical-align: middle;
+            width: auto;
+            line-height: 1;
+            color: rgba(0, 0, 0, 0.1);
+            margin-bottom:10px;
+            z-index: 2;
+            .star-actived{
+              position: absolute;
+              top: 0;
+              left: 0;
+              overflow: hidden;
+              width: 0%;
+              color:rgba(248, 184, 8, 0.979);
+              font-style: normal;
+              word-wrap: normal;
+            }
+            .rate-100{width:100%}
+            .rate-90{width:90%}
+            .rate-80{width:80%}
+            .rate-70{width:70%}
+            .rate-60{width:60%}
+            .rate-50{width:50%}
+            .rate-40{width:40%}
+            .rate-30{width:30%}
+            .rate-20{width:20%}
+            .rate-10{width:10%}
+          }
+          .star-actived:before{
+            content: "\2605\2605\2605\2605\2605";
+          }
+          .rating-star:before{
+            content: "\2605\2605\2605\2605\2605";
+          }
+        }
+      }
+    }
+  }
+}

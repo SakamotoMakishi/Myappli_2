@@ -1,0 +1,85 @@
+.mypage{
+  width: 300px;
+  height: 1100px;
+  float: right;
+  position: relative;
+  bottom: 2192px;
+  right: -15px;
+  background-color: rgba(243, 240, 240, 0.753);
+  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px;
+  -moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 1px;
+  box-shadow: rgba(168, 167, 167, 0.7) 0px 0px 3px 3px;
+  border-radius:5px;
+  &__image{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    right: -45px;
+    -moz-box-shadow: rgba(134, 130, 130, 0.2) 0px 0px 2px 2px;
+    box-shadow: rgba(110, 108, 78, 0.37) 3px 5px 6px 5px;
+  }
+  &__name{
+    position: relative;
+    left: -5px;
+    top: 30px;
+    text-align: center;
+  }
+  .mypage_list{
+    list-style:none;
+    margin-top:20px;
+    li{
+      margin-top:40px;
+      a{
+        color: rgba(248, 187, 75, 0.918);
+        font-size:30px;
+      }
+    }
+    .list1{
+      padding-top:30px;
+    }
+    .list2{
+    }
+    .list3{
+      .book_title{
+        padding-top: 10px;
+        font-size: 20px;
+        word-wrap:break-word;
+      }
+      .book_image{
+      margin-top:20px;
+      -webkit-box-shadow: rgba(156, 155, 155, 0.2) 0px 0px 1px 1px;
+      -moz-box-shadow: rgba(216, 215, 215, 0.2) 0px 0px 1px 1px;
+      box-shadow: rgba(219, 199, 134, 0.856) 0px 0px 3px 3px;
+      background-size: cover;
+      width: 150px;
+      height: 200px;
+      background-position: 50% 50%;
+      border-radius: 5px;
+      }
+    }
+    .list4{
+      margin-top:30px;
+      .book_week{
+        font-size:40px;
+        margin-top:10px;
+        color: rgba(248, 187, 75, 0.918)
+      }
+    }
+    .list5{
+      .book_week{
+        margin-top:10px;
+        font-size:40px;
+        color: rgba(248, 187, 75, 0.918)
+      }
+    }
+    .list2{
+      .book_week{
+        margin-top:10px;
+        font-size:40px;
+        color: rgba(248, 187, 75, 0.918)
+      }
+    }
+  }
+}

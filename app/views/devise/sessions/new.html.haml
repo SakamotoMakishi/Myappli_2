@@ -1,0 +1,20 @@
+.login_body
+  = render 'books/header'#ヘッダーのビューファイル
+  = render 'books/top_contents'  #トップ画面の実装
+  .login_setup
+    %h2 Login
+    .login_form
+      = form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
+        .login_form__mail
+          = f.email_field :email, autofocus: true, :placeholder => 'メールアドレスを入力'
+        .login_form__pass
+          = f.password_field :password, autocomplete: "off", :placeholder => 'パスワードを入力'
+        .login_form__row
+          - if devise_mapping.rememberable?
+            .login_form__row__password
+              = f.check_box :remember_me
+              = f.label :パスワードを記憶
+          .submit= f.submit "ログイン"
+      .link_box
+        .link_box__links
+          = render "devise/shared/links"

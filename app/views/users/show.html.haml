@@ -1,0 +1,42 @@
+= render 'books/header'#ヘッダーのビューファイル
+.my_user_page
+  = image_tag current_user.avatar,class:"my_user_page__image"
+  .my_user_page__name
+    %h2= current_user.name
+  %ul.mypage_list
+    %li.list1
+    %li.list4
+      週間読書数
+      .book_week
+        = "#{@book_week}"
+    %li.list5
+      月間読書数
+      .book_week
+        = "#{@book_month}"
+    %li.list2
+      合計読書数
+      .book_week
+        = "#{@total}"
+  .book_title_image
+    - @last_book.each do |book|
+      .title_book
+        最新の投稿
+      .book_title{title: "#{book.title}"}
+        = book.title
+      = link_to "/books/#{book.id}/reviews/new" do
+        .book_image{style:"background-image:url(#{book.image})"}
+.user_page
+  .contents_section
+    .container
+      .header-section
+        %h2.text-middle
+          %i.fas.fa-book
+          MY BOOKS
+      %ul.book_list
+        - @book.reverse_each do |book| #プロダクトテーブルからbookという変数でtitleを取り出している。
+          %li.col
+            = link_to "/books/#{book.id}/reviews/new" do
+              .book_image{style:"background-image:url(#{book.image})"}
+            .thumbnail__caption
+              %h3.book_title{title: "#{book.title}"}
+                = book.title

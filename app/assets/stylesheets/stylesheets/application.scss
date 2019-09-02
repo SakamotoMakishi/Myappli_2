@@ -1,0 +1,17 @@
+//@import'./reset.scss';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+@import'./header.scss';  //ヘッダー
+@import'./top_contents.scss'; //トップ
+@import'./side_bar.scss';   //サイドリスト
+@import'./books.scss';      //メイン
+@import'./ranking.scss';     //ランキング
+@import'./mypage.scss';   //サイドページ
+@import'./post.scss';  //投稿画面
+@import'./review.scss';  //レビュー画面
+@import'./footer.scss';  //フッター
+@import'./login.scss' ;  // ログイン画面
+@import'./signup.scss';  //新規登録画面
+@import'./user_show.scss'; //マイページ
+@import'./all_user.scss';  //登録ユーザー一覧
+//@import'./mooovi.scss';
