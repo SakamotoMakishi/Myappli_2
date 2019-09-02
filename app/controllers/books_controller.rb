@@ -4,7 +4,7 @@ class BooksController < ApplicationController
   end
 
   def index
-    # @books = Book.includes(:user).order('created_at DESC').limit(40)
+    @books = Book.includes(:user).order('created_at DESC').limit(40)
     # @ranking = Book.includes(:user).find(Review.group(:book_id).order('count(book_id) desc').limit(10).pluck(:Book_id))
     if user_signed_in?
       book_data
