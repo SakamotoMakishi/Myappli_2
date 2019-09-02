@@ -1,0 +1,67 @@
+.login_body{
+  height: 100vh;
+  .login_setup{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    background-color:rgba(211, 208, 208, 0.822);
+    text-align: center;
+    -moz-box-shadow: rgba(216, 214, 214, 0.2) 0px 0px 1px 1px;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 5px;
+    h2{
+      font-size: 80px;
+      padding-top:100px;
+    }
+    .login_form{
+      &__mail{
+      margin-bottom:50px;
+        input{
+          width: 500px;
+          height: 30px;
+          font-size:15px;
+        }
+      }
+      &__pass{
+        margin-bottom:50px;
+        input{
+          width: 500px;
+          height: 30px;
+          font-size:15px;
+        }
+      }
+      &__row{
+        font-size:15px;
+        &__password{
+          margin-bottom: 20px;
+          input{
+          }
+        }
+        .submit{
+          margin-bottom: 30px;
+          input{
+          width: 200px;
+          height:100px;
+          cursor: pointer;
+          font-size:50px;
+          margin: auto;
+          position: relative;
+          right:60px;
+          }
+        }
+      }
+      .link_box{
+        font-size:15px;
+        &__links{
+          font-size:30px;
+          padding-bottom: 60px;
+          a{
+            margin-bottom:10px;
+            color: rgba(212, 190, 142, 0.986);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

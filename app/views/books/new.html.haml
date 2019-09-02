@@ -1,0 +1,15 @@
+= render 'books/header'#ヘッダーのビューファイル
+.form_page
+  .form
+    = form_for (@book) do |f|
+      .message-box
+        .form_box
+          %p Title
+          = f.text_field :title, class:"form_title"
+          %p Review
+          = f.text_area :review, class:"form_review"
+          %p Image
+          = f.label :image, class:"form_image" do
+            %i.fas.fa-camera
+            = f.file_field :image, class: 'form_file'
+          = f.submit 'Send', class: 'submit'

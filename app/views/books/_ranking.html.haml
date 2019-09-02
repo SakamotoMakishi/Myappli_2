@@ -1,0 +1,24 @@
+- if user_signed_in?
+  .ranking_section
+    .container
+      .header-section
+        %h2.text-middle
+          %i.fas.fa-crown
+          Ranking
+      %ul.book_list
+        - @ranking.each.with_index(1) do |book|
+          %li.col
+            = link_to "/books/#{book.id}/reviews/new" do
+              .book_image{style:"background-image:url(#{book.image})"}
+            .thumbnail__caption
+              %h3.book_title{title: "#{book.title}"}
+                = book.title
+                -if book.reviews.present?
+                  %span.rating-star
+                    %i{class: "star-actived rate-#{book.reviews.average(:rate).round}0"}
+                - else
+                  %span.rating-star
+                    %i.star-actived.rate-0
+- else
+  .no_ranking
+    .no_list

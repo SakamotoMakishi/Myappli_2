@@ -1,0 +1,14 @@
+= render 'books/header'
+.contents_section
+  .container
+    .header-section
+      %h2.text-middle
+        %i.fas.fa-book
+        Users
+    .all
+      .all__users
+        %ul.all__users__one
+          - @users.each do |user|
+            %li= image_tag user.avatar,class:"all__users__one__image"
+            %li.all__users__one__name
+              = user.name

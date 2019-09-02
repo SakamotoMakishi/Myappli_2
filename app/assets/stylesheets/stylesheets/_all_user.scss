@@ -1,0 +1,56 @@
+.contents_section{
+  position: relative;
+  padding: 10px;
+  background-color: rgba(240, 239, 239, 0.705);
+  -webkit-box-shadow: rgba(156, 155, 155, 0.2) 0px 0px 1px 1px;
+  -moz-box-shadow: rgba(216, 215, 215, 0.2) 0px 0px 1px 1px;
+  box-shadow: rgba(196, 196, 194, 0.856) 0px 0px 5px 5px;
+  margin-top: 50px;
+  border-radius: 5px;
+  .container{
+    top:10px;
+    .header-section{
+      margin-top: -9px;
+      border-bottom: 3px solid #d7dbe2;
+      .text-middle{
+        font-size: 25px;
+        text-align: center;
+        .fas{
+          font-size:20px;
+        }
+      }
+    }
+    .all{
+      padding-top: 20px;
+      overflow: scroll;
+      margin: 13px;
+        &__users{
+        &__one{
+          list-style: none;
+          margin:auto;
+          margin-left: 30px;
+          margin-bottom: 100px;
+          width: 150px;
+          float: left;
+          &__name{
+          }
+          &__image{
+          margin: 30px;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1) inset;
+          background-size: cover;
+          background-position: 50% 50%;
+          background-repeat: no-repeat;
+          box-shadow:rgba(244, 245, 245, 0.7) 0px 0px 2px 2px;
+          }
+          .book_image:hover{
+            box-shadow:rgba(199, 197, 197, 0.7) 0px 0px 7px 7px;
+            transition: color .3s;
+          }
+        }
+      }
+    }
+  }
+}

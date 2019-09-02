@@ -1,0 +1,63 @@
+.form_page{
+  .form{
+    width:50%;
+    height: 550px;
+    margin: auto;
+    margin-top:70px;
+    -webkit-box-shadow: rgba(226, 225, 225, 0.2) 0px 0px 1px 1px;
+    -moz-box-shadow: rgba(216, 214, 214, 0.2) 0px 0px 1px 1px;
+    background-color: rgba(245, 245, 245, 0.986);
+    border-radius: 5px;
+    font-family: 'arial unicode ms';
+    .message-box{
+    height: 500px;
+    width: 500px;
+    .form_box{
+      margin: auto;
+      padding-top:50px;
+      margin-left:100px;
+      p{
+        margin-left:30px;
+      }
+      .form_title{
+        width: 300px;
+        height: 20px;
+        border-radius: 5px;
+        border-color:rgba(180, 178, 178, 0.7);
+        box-shadow:rgba(224, 221, 221, 0.7) 0px 0px 2px 2px;
+      }
+      .form_review{
+        width: 500px;
+        height: 200px;
+        border-color:rgba(85, 83, 83, 0.7);
+        border-radius: 5px;
+        box-shadow:rgba(207, 204, 204, 0.7) 0px 0px 2px 2px;
+      }
+      .form_image{
+        font-size: 1.3rem;
+        cursor: pointer;
+        float: left;
+        .fas{
+          font-size:40px;
+          margin-left:30px;
+        }
+        .form_file{
+          display: none;
+        }
+      }
+      .submit{
+        width: 125px;
+        height: 50px;
+        font-size: 20px;
+        background-color:rgba(159, 162, 163, 0.7);
+        color: white;
+        cursor: pointer;
+        position: relative;
+        border-radius: 5px;
+        left:300px;
+        top:-10px;
+      }
+    }
+    }
+  }
+}

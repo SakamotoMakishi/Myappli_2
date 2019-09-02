@@ -1,0 +1,64 @@
+.login_form{
+  height: 100%;
+  .label{
+    margin-bottom: 30px;
+    font-size:25px;
+    &__li{
+      input{
+        width: 500px;
+        height: 30px;
+        margin: 20px;
+        margin: auto;
+      }
+    }
+    &__name{
+      input{
+        width: 250px;
+        height: 30px;
+        margin: 20px
+      }
+    }
+  }
+  .field{
+    .label{
+      margin-bottom: 20px;
+        &__ava{
+        margin-bottom:30px;
+        width: 300px;
+        top:20px;
+        position: relative;
+        left:370px;
+        cursor: pointer;
+        input{
+          cursor: pointer;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .submit{
+    padding-bottom: 30px;
+    width: 100px;
+    margin: auto;
+    cursor: pointer;
+    input{
+      cursor: pointer;
+    }
+  }
+  .link_box_sin{
+    &__links{
+      font-size:20px;
+      padding-bottom: 150px;
+    }
+    &__link{
+      font-size:30px;
+      cursor: pointer;
+      a{
+        font-size:50px;
+        color: rgba(212, 190, 142, 0.986);
+        position: relative;
+        bottom:100px;
+      }
+    }
+  }
+}

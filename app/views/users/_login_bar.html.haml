@@ -1,0 +1,11 @@
+.side_bar
+  .side_contents
+    .contents
+      %h2 Noname
+      %ul.contents_list
+        %li
+          %i.fas.fa-child
+            = link_to 'Login',new_user_session_path,class: "btn"
+        %li
+          %i.fas.fa-child
+            = link_to 'Sinup',new_user_registration_path,class: "btn"

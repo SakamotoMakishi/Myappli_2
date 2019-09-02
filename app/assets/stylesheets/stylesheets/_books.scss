@@ -1,0 +1,158 @@
+html{
+  width: 100vw;
+  height: 100vh;
+  //background-image:url();
+  //background-size:cover;
+  background-color: rgba(240, 240, 240, 0.829);
+  font-family:Comic Sans MS;
+  body{
+    padding: 0;
+    margin: 0;
+    .top_page{
+      height: 3160px;
+      background-image:url(https://www.pakutaso.com/shared/img/thumb/ELLY863_washi14132906_TP_V.jpg);
+      background-size:cover;
+      .contents_section{
+        width: 820px;
+        position: relative;
+        top: 30px;
+        padding: 10px;
+        background-color: rgba(240, 239, 239, 0.705);
+        -webkit-box-shadow: rgba(156, 155, 155, 0.2) 0px 0px 1px 1px;
+        -moz-box-shadow: rgba(216, 215, 215, 0.2) 0px 0px 1px 1px;
+        box-shadow: rgba(196, 196, 194, 0.856) 0px 0px 5px 5px;
+        margin: auto;
+        height: 2200px;
+        border-radius: 5px;
+        .container{
+          top:10px;
+          height: 1600px;
+          .header-section{
+            margin-top: -9px;
+            border-bottom: 3px solid #d7dbe2;
+            .text-middle{
+              font-size: 25px;
+              text-align: center;
+              .fas{
+                font-size:20px;
+              }
+            }
+          }
+        }
+        .book_list{
+        padding-left: 0;
+        padding-top: 20px;
+        list-style: none;
+        overflow: scroll;
+        height: 2050px;
+        margin: 13px;
+          .col{
+          margin:auto;
+          margin-left: 30px;
+          margin-bottom: 100px;
+          width: 150px;
+          height: 250px;
+          float: left;
+            .book_image{
+            padding-top: 141.4%;
+            box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1) inset;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            box-shadow:rgba(244, 245, 245, 0.7) 0px 0px 2px 2px;
+            border-radius: 1em;
+            }
+            .book_image:hover{
+              box-shadow:rgba(126, 125, 125, 0.7) 0px 0px 7px 7px;
+              transition: color .3s;
+            }
+            .thumbnail__caption{
+              .book_title{
+                word-wrap:break-word;
+                .rating-star{
+                  margin-top:30px;
+                  position: relative;
+                  display: inline-block;
+                  vertical-align: middle;
+                  width: auto;
+                  line-height: 1;
+                  color: rgba(0, 0, 0, 0.1);
+                  margin-bottom:10px;
+                  .star-actived{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    overflow: hidden;
+                    width: 0%;
+                    color:hsla(46, 100%, 55%, 0.979);
+                    font-style: normal;
+                    word-wrap: normal;
+                  }
+                  .rate-100{width:100%}
+                  .rate-90{width:90%}
+                  .rate-80{width:80%}
+                  .rate-70{width:70%}
+                  .rate-60{width:60%}
+                  .rate-50{width:50%}
+                  .rate-40{width:40%}
+                  .rate-30{width:30%}
+                  .rate-20{width:20%}
+                  .rate-10{width:10%}
+                }
+                  .star-actived:before{
+                    content: "\2605\2605\2605\2605\2605";
+                  }
+                .rating-star:before{
+                  content: "\2605\2605\2605\2605\2605";
+                }
+              }
+            }
+          }
+          .book_list:hover{
+            overflow: scroll;
+            background-color:hsla(46, 100%, 55%, 0.979);
+          }
+        }
+      }
+      .post_box{
+        position: fixed;
+        bottom: 0px;
+        right: 30px;
+        z-index: 1000;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        text-align: center;
+        .fas{
+          font-size:70px;
+          color: rgba(243, 189, 73, 0.952);
+        }
+      }
+      .login{
+        position: fixed;
+        bottom: 0px;
+        right: 200px;
+        z-index: 1000;
+        width: 122px;
+        height: 122px;
+        border-radius: 50%;
+        color: rgba(243, 189, 73, 0.952);
+        text-align: center;
+        &__pop{
+          position: relative;
+          font-size:50px;
+          left: -315px;
+          width: 400px;
+          bottom: 60px;
+        }
+        .far{
+          font-size: 40px;
+          position: relative;
+          left: 50px;
+          bottom: 140px;
+          color: rgba(243, 189, 73, 0.952);
+        }
+      }
+    }
+  }
+}
