@@ -9,10 +9,10 @@
         %li.col
           - if user_signed_in?
             = link_to "/books/#{book.id}/reviews/new" do
-              .book_image{style:"background-image:url(#{book.image})"}
+              .book_image{style:"background-image:url(#{url_for(book.image)})"}
           - else
             = link_to root_path do
-              .book_image{style:"background-image:url(#{book.image})"}
+              .book_image{style:"background-image:url(#{url_for(book.image)})"}
           .thumbnail__caption
             %h3.book_title{title: "#{book.title}"}
               = book.title

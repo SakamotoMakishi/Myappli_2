@@ -13,3 +13,4 @@
             %i.fas.fa-camera
             = f.file_field :image, class: 'form_file'
           = f.submit 'Send', class: 'submit'
+          = link_to "Logout", destroy_user_session_path, method: :delete, class: "btn"

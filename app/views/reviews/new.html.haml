@@ -11,7 +11,7 @@
           %i.fas.fa-book
           .book_title
             = @book.title
-        = image_tag "#{@book.image}",class: 'one_image'
+        = image_tag @book.image,class: 'one_image'
       .user_avatar
         = image_tag @book.user.avatar,class:"user_avatar__image"
         .user_avatar__name

@@ -19,9 +19,6 @@
                 %i.fas.fa-edit
                   = link_to 'PoSt',new_book_path,class: "btn"
               %li
-                %i.fas.fa-child
-                  = link_to 'Users',users_path,class: "btn"
-              %li
                 %i.fas.fa-cloud-upload-alt
                   = link_to "Logout", destroy_user_session_path, method: :delete, class: "btn"
             - else

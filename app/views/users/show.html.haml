@@ -24,7 +24,7 @@
       .book_title{title: "#{book.title}"}
         = book.title
       = link_to "/books/#{book.id}/reviews/new" do
-        .book_image{style:"background-image:url(#{book.image})"}
+        .book_image{style:"background-image:url(#{url_for(book.image)})"}
 .user_page
   .contents_section
     .container
@@ -36,7 +36,7 @@
         - @book.reverse_each do |book| #プロダクトテーブルからbookという変数でtitleを取り出している。
           %li.col
             = link_to "/books/#{book.id}/reviews/new" do
-              .book_image{style:"background-image:url(#{book.image})"}
+              .book_image{style:"background-image:url(#{url_for(book.image)})"}
             .thumbnail__caption
               %h3.book_title{title: "#{book.title}"}
                 = book.title
